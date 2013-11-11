@@ -1,12 +1,12 @@
 {
   "name": "copydep",
-  "version": "0.3.1",
+  "version": "0.0.1",
   "description": "Wire dependencies to your source code.",
   "homepage": "https://github.com/syeo/copydep",
   "bugs": "https://github.com/syeo/copydep/issues",
   "author": {
-    "name": "Stephen Sawchuk",
-    "email": "sawchuk@gmail.com"
+    "name": "Stanley Yeo",
+    "email": "yyoud88@gmail.com"
   },
   "keywords": [
     "bower",
