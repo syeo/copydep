@@ -14,9 +14,6 @@ module.exports = function (grunt) {
       gruntfile: {
         src: 'Gruntfile.js'
       },
-      bin: {
-        src: ['bin/*']
-      },
       lib: {
         src: ['lib/**/*.js']
       },
@@ -26,14 +23,6 @@ module.exports = function (grunt) {
     },
     clean: {
       test: '.tmp'
-    },
-    copy: {
-      test: {
-        expand: true,
-        cwd: 'test/fixture/',
-        src: '**/*',
-        dest: '.tmp/'
-      }
     },
     watch: {
       gruntfile: {
@@ -55,10 +44,9 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-nodeunit');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-clean');
 
   // Default task.
-  grunt.registerTask('default', ['jshint', 'clean', 'copy', 'nodeunit', 'clean']);
+  grunt.registerTask('default', ['jshint', 'clean', 'nodeunit', 'clean']);
 
 };

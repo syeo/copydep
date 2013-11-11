@@ -1,9 +1,9 @@
 {
-  "name": "wiredep",
+  "name": "copydep",
   "version": "0.3.1",
   "description": "Wire dependencies to your source code.",
-  "homepage": "https://github.com/stephenplusplus/wiredep",
-  "bugs": "https://github.com/stephenplusplus/wiredep/issues",
+  "homepage": "https://github.com/syeo/copydep",
+  "bugs": "https://github.com/syeo/copydep/issues",
   "author": {
     "name": "Stephen Sawchuk",
     "email": "sawchuk@gmail.com"
@@ -23,7 +23,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/stephenplusplus/wiredep"
+    "url": "https://github.com/syeo/copydep"
   },
   "licenses": [
     {
