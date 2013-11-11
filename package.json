@@ -1,7 +1,7 @@
 {
   "name": "copydep",
   "version": "0.0.1",
-  "description": "Wire dependencies to your source code.",
+  "description": "Copy only main files of dependencies to another place.",
   "homepage": "https://github.com/syeo/copydep",
   "bugs": "https://github.com/syeo/copydep/issues",
   "author": {
@@ -16,7 +16,7 @@
     "script",
     "dependencies"
   ],
-  "main": "bin/wiredep",
+  "main": "bin/copydep",
   "files": [
     "bin/",
     "lib/"
