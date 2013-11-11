@@ -8,7 +8,7 @@
 
 'use strict';
 
-var fs = require('fs');
+// var fs = require('fs');
 var helpers = require('../lib/helpers');
 
 /**
@@ -24,10 +24,9 @@ module.exports = function (opts) {
     ('global-dependencies', helpers.createStore())
     ('bower.json', opts.bowerJson)
     ('directory', opts.directory)
-    ('ignore-path', opts.ignorePath)
     ('css-pattern', opts.cssPattern)
     ('js-pattern', opts.jsPattern)
-    ('target', opts.target)
+    ('target', opts.target);
 
   require('../lib/detect-dependencies')(config);
   require('../lib/copy-dependencies')(config);
@@ -35,4 +34,6 @@ module.exports = function (opts) {
   if (config.get('warnings')) {
     helpers.warn(config.get('warnings'));
   }
+
+  return config;
 };
